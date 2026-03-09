@@ -1,0 +1,28 @@
+.teste{ 
+    color:red; 
+}
+
+#viagem { 
+    color:cornflowerblue;
+}
+
+a:hover{
+    color:yellowgreen;
+ }
+
+
+ .cor:hover{ 
+ color:violet ;
+ }
+
+ .paz:hover{
+    color:brown;
+ }
+
+ #mesa:hover{ 
+    color:darkgreen;
+ }
+
+ #estojo:hover{
+    color:aqua;
+ }
