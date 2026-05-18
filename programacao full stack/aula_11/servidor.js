@@ -68,8 +68,9 @@ app.post('/login', function(requisicao, resposta) {
   var senha = requisicao.body.senha;
   var filtro = {usuario}
   usuarios.find(filtro).toArray(function (err,items){
+    console.log(items);
     if(items.length == 0){
-      resposta.render('resposta_carro',{resposta:"Carro não encontrado"});
+      resposta.render('resposta_carro',{resposta:"usuario não encontrado"});
     } else if(items[0].senha != senha){
       resposta.render('resposta_carro',{resposta:"senha errada"})
     } else {
