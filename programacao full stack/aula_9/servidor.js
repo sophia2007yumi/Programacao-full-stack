@@ -44,7 +44,7 @@ app.post('/entrar', function(requisicao, resposta) {
             mensagem: 'Login realizado com sucesso!'
         });
     } else {
-        resposta.render('resposta', {
+        resposta.render('resposta_cadastro', {
             mensagem: 'Usuário ou senha incorretos!'
         });
     }
