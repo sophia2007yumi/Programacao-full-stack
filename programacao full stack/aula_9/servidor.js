@@ -9,7 +9,7 @@ app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: true }));
 
 app.set('view engine', 'ejs');
-app.set('views','/views');
+app.set('views','./views');
 
 var usuario_cadastrado = "";
 var senha_cadastrada = "";
@@ -40,7 +40,7 @@ app.post('/entrar', function(requisicao, resposta) {
     var senha = requisicao.body.senha;
 
     if (usuario == usuario_cadastrado && senha == senha_cadastrada) {
-        resposta.render('resposta', {
+        resposta.render('resposta_cadastro', {
             mensagem: 'Login realizado com sucesso!'
         });
     } else {
