@@ -3,7 +3,6 @@ var http = require('http');
 var express = require('express');
 var path = require('path');
 
-var banco = require('./banco');
 
 var app = express();
 
